@@ -1,0 +1,16 @@
+brew install ollama
+ollama serve
+ollama pull codellama
+ollama pull llama3
+ollama pull mistral
+ollama pull gemma
+ollama create codeguru -f Modelfile
+ollama run codeguru
+
+| Action             | Command                      |
+| ------------------ | ---------------------------- |
+| Start (foreground) | `ollama serve`               |
+| Stop (foreground)  | `Ctrl + C`                   |
+| Start (background) | `brew services start ollama` |
+| Stop (background)  | `brew services stop ollama`  |
+| Kill manually      | `pkill ollama` or `kill PID` |
